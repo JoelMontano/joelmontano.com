@@ -26,6 +26,11 @@ body {
   margin-right: auto;
 }
 
+.grid-conatiner {
+  display: grid;
+
+}
+
 .dark {
   background: black;
   /* color: white; */
