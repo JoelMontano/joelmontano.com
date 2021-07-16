@@ -1,24 +1,25 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   color: rgb(248, 248, 248);
-  background: linear-gradient(to right, #3494e6, #ec6ead); 
+  background: linear-gradient(to right, #3494e6, #ec6ead);
 }
 
 .card {
   padding: 16px;
-  border: 4px  rgb(213, 223, 233);
+  border: 4px rgb(213, 223, 233);
   box-shadow: 4px 4px 8px #333;
   border-radius: 1px;
 }
 
 .card2 {
   padding: 16px 0;
-  border: 4px  rgb(213, 223, 233);
+  border: 4px rgb(213, 223, 233);
   box-shadow: 4px 4px 8px #333;
   border-radius: 1px;
   width: 120px;
@@ -28,7 +29,6 @@ body {
 
 .grid-conatiner {
   display: grid;
-
 }
 
 .dark {
@@ -36,8 +36,8 @@ body {
   /* color: white; */
 }
 
-.dark .card > a{
-  color: yellow
+.dark .card > a {
+  color: yellow;
 }
 .socials {
   padding: 16px;
@@ -53,18 +53,77 @@ a {
 }
 
 #twitter {
-  color: #00acee
+  color: #00acee;
 }
 
 #linkedin {
-  color: #0E76A8
-  background: white
+  color: #0e76a8;
 }
 
 .form {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
   border: 2px solid blue;
   border-radius: 5px;
   margin: 15px 0px;
 }
+
+.tabs {
+  display: grid;
+}
+
+[role="tablist"] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+[role="tabpanel"] {
+  background: var(--yellow);
+  padding: 2rem;
+}
+
+button {
+  background: var(--grey);
+  border: 0;
+  color: black;
+  border-radius: 5px 5px 0 0;
+  --bs-color: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 -2px 5px var(--bs-color);
+  cursor: pointer;
+}
+
+button[aria-selected="true"] {
+  background: var(--yellow);
+  box-shadow: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+button:focus {
+  outline: 0;
+  --bs-color: rgba(0, 0, 0, 0.6);
+}
+
+.resume {
+  overflow: scroll;
+  overflow-x: hidden;
+  text-align: left;
+  width: 700px;
+  height: 40vh;
+}
+
+#title {
+  color: black;
+}
+li {
+  font-size: 14px;
+  margin-left: 10px;
+  list-style-type: circle;
+}
+
+.milo {
+  height: 300px;
+  width: auto;
+}
+

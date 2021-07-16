@@ -1,48 +1,155 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- ^ the viewport meta tag is to make your webpage responsive according to screen size -->
+    <title>Welcome!</title>
+    <!-- ^ your webpage's title -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- ^ where we link our CSS file to our webpage -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <audio id="audio" src="chance.mp3"></audio>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <!-- ^ the viewport meta tag is to make your webpage responsive according to screen size -->
-  <title>Welcome!</title>
-  <!-- ^ your webpage's title -->
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <!-- ^ where we link our CSS file to our webpage -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-
-<body>
-  <div class="grid-container">
-    <h3 id="welcometext">Press D</h3>
-    <div class="card grid-item">
-      <img
-        src="https://www.pikpng.com/pngl/m/281-2813294_cute-peach-sticker-kawaii-stickers-transparent-background-cute.png"
-        alt="Cute Peach Sticker Kawaii Stickers Transparent Background - Cute Kawaii Peach Clipart@pikpng.com">
-      <h1>Joel Montano</h1>
-      <p>working | investing | vibing </p>
-      <a href="/about.html">About me</br></a>
-      <a href="/contact.html">Contact me</a>
-      <div class="socials">
-        <a target="_blank" href="https://twitter.com/JoelMon97">
-          <i id="twitter" class="fab fa-twitter fa-2x">
-          </i>
-        </a>
-        <a href="mailto:joel97montano@gmai.com">
-          <i class="fas fa-envelope fa-2x">
-          </i>
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/in/joelmontanoucf/">
-          <i id="linkedin" class="fab fa-linkedin fa-2x">
-          </i>
-        </a>
+  <body>
+    <div class="grid-container">
+      <div class="card grid-item">
+        <img
+          src="https://www.pikpng.com/pngl/m/281-2813294_cute-peach-sticker-kawaii-stickers-transparent-background-cute.png"
+          alt="Cute Peach Sticker Kawaii Stickers Transparent Background - Cute Kawaii Peach Clipart@pikpng.com"
+        />
+        <h1>Joel Montano</h1>
+        <div class="wrapper">
+          <div class="tabs">
+            <div role="tablist" aria-label="Programming Languages">
+              <button role="tab" aria-selected="true" id="about">
+                what i do
+              </button>
+              <button role="tab" aria-selected="false" id="resume">
+                hire me
+              </button>
+              <button role="tab" aria-selected="false" id="milo">
+                milo fans only
+              </button>
+            </div>
+            <div role="tabpanel" aria-labelledby="about">
+              <p>
+                I'm a self taught programmer, currently working in product at
+                Microsoft. I also advise Contenda(link) on their growth and GTM
+                strategy. Always happy to chat about my experiences in either!
+                :) <br /><br />
+                I'm not tied to a specific industry and like to keep my
+                interests broad. I know many of you have already tabbed out
+                cause I'm another lowly "generalist" but I figured I'm too new
+                to devote my career to a specific vertical, idk what half of
+                them even are yet... One unifying theme is I want to build
+                products that are solving hard problems and are easily
+                accessible. Professionally, I've just worked in product but I'm
+                interested in engineering, growth, and gtm roles as well!
+                <br /><br />
+                Work stuff aside, I've been a fan of 100t through the "dark
+                days", fan of the only relevant sport leagues in the US (I'll
+                let you decide which those are) and I'm finally getting back
+                into weightlifting and bougie traveling after the pandemic stole
+                them from me. I'm always looking to meet and chat with new
+                people, don't be afraid to DM me on Twitter if you wanna be
+                friends or add me on LinkedIn if don't want me to take 3 months
+                to get back to you.
+              </p>
+            </div>
+            <div role="tabpanel" aria-labelledby="resume" hidden>
+              <button id="song">listen to this while reading</button>
+              <div class="resume">
+                <p>I'm interested in engineering + engineering-adjacent roles. I'd want to get into the codebase and drive product
+                  development but still need a sprinkle of those external + customer facing funcions. Roles such as growth/gtm, customer success,
+                  dev advocacy, and product are all interesting to me! Some things I enjoy doing at work: coding, creating technical content, onboarding new customers, conducting 
+                user interviews, defining product needs and strategy, ending meetings early, shitposting, abusing custom slack emojis.
+              </p>
+                <h3 id="title">Education</h3>
+                <li>
+                  University of Central Florida: BS in Civil Engineering, minor
+                  in Computer Science (2020)
+                </li>
+                <h3 id="title">Work Experience</h3>
+                <h4>Microsoft - Product Manager - Azure</h4>
+                <li>
+                  Built internal tooling to improve cybersecurity posture of 1st and 3rd party
+                  facilities.
+                </li>
+                <li>
+                  Basically, a lot of the work I did was sensitive. If you want/need more details, my email is
+                   below &#128521
+                </li>
+                <li>
+                  Don't fret! User research, stakeholder management, cross-functional collaboration, customer discovery,
+                  prototyping, etc. etc. I covered most of the product buzzwords in my day-to-day work.
+                </li>
+                <h4>Envision Accelerator - Ops & Growth</h4>
+                <li>
+                  I made sure everything ran smoothly for the cohorts - office hours, mentor calls, etc. Used a mix
+                  of airtable and zapier to automate some of the process.
+                </li>
+                <li>
+                  I fought for my life using webflow to update the website.
+                </li>
+                 <li>
+                  Transitioned to a growth role and handled external events, social media, and wrote the newsletter.
+                </li>
+                 <li>
+                  Mentored a few amazing companies in product, hiring, growth, and gtm. Now I'm an advisor for one lol
+                </li>
+                <h3 id="title">Projects</h3>
+                <h4>Learn with Joel</h4>
+                <li>
+                 I should really write more, but I "Learn in Public" through this newsletter.
+                </li>
+                <h4>This Website</h4>
+                 <li>
+                   All HTML, CSS, and JS. itsnotmuchbutitshonestwork.jpg
+                </li>
+                 <li>
+                  Will be experimenting and adding more as I learn :)
+                </li>
+                <h4>In the Pipeline...</h4>
+                <li>
+                  Rec League App
+                </li>
+                <li>
+                  The Milo App
+                </li>
+                <li>
+                  Whatever Wes Bos tells me in his JS 30 course
+                </li>
+              </div>
+            </div>
+            <div role="tabpanel" aria-labelledby="milo" hidden>
+                  <img class="milo" src="milo/m6.jpg">
+                  <img class="milo" src="milo/m2.jpg">
+                  <img class="milo" src="milo/m3.jpg">
+                  <img class="milo" src="milo/m4.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="socials">
+          <a target="_blank" href="https://twitter.com/JoelMontanoo">
+            <i id="twitter" class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="mailto:joel97montano@gmai.com">
+            <i class="fas fa-envelope fa-2x"></i>
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/joelmontanoucf/">
+            <i id="linkedin" class="fab fa-linkedin fa-2x"></i>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-  <script src="script.js">
 
-  </script>
-  <!-- ^ where we link our JS file to our webpage (we don't need to worry about this for now!) -->
-</body>
-
+    <script src="script.js"></script>
+    <!-- ^ where we link our about file to our webpage (we don't need to worry about this for now!) -->
+  </body>
 </html>
